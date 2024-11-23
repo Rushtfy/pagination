@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mukta:wght@200;300;400;500;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+.sectionOne {
+    background-image: linear-gradient(to top right, rgb(0, 115, 255), rgb(0, 229, 255));
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img{
+        max-width: 40%;
+    }
+
+    .containerOne {
+        width: 30.5%;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        h2 {
+            font-size: 48px;
+            line-height: 50px;
+        }
+
+        p {
+            font-size: 14px;
+            line-height: 18px;
+        }
+
+        .buttonInFirstSection {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+
+            .transparentButton {
+                padding: 15px 35px;
+                border: 1px solid white;
+                border-radius: 5px;
+                background-color: rgba($color: #FFFFFF, $alpha: 0.4);
+                color: white;
+                cursor: pointer;
+            }
+            .normalButton{
+                padding: 15px 35px;
+                border: 1px solid white;
+                border-radius: 5px;
+                background-color: white;
+                color: black;
+                cursor: pointer;
+            }
+            button{
+                font-weight: 500;
+            }
+        }
+    }
+}
+.sectionTwo{
+    padding: 40px 0;
+    .containerTwo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        gap: 60px;
+        p{
+            color: gray;
+        }
+        .howWorksTitle{
+            width: 44%;
+            h2{
+                margin-bottom: 20px;
+                text-transform: uppercase;
+                font-size: 36px;
+            }
+        }
+        .services{
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            width: 90%;
+            .invidualService{
+                width: 25%;
+                h4{
+                    margin-bottom: 20px;
+                }
+            }
+            svg{
+                font-size: 40px;
+                margin-bottom: 20px;
+                padding: 20px;
+                border: 1px solid rgb(175, 175, 175);
+                border-radius: 5px;
+                background-color: rgba(175, 175, 175, 0.2);
+            }
+        }
+    }
+}
+.sectionThree{
+    padding: 40px 0;
+    background-color: rgb(218, 245, 255);
+    .containerThree{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+    .pageNums{
+        padding: 20px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        button{
+            padding: 10px;
+            background-color: rgb(0, 115, 255);
+            color: white;
+            border: none;
+            cursor: pointer;
+            width: 32px;
+            border-radius: 5px;
+        }
+    }
+}
